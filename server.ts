@@ -10,10 +10,10 @@ console.log("Iniciando motor de IA Sublime Artes... 🚀");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Habilitar permisos CORS para comunicación entre servidores
+// Habilitar permisos CORS y procesadores de datos universales
 app.use(cors());
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true })); // <--- ESTA LÍNEA SE ENCARGA DE QUE NUNCA MÁS DE 500
 // Inicializar Cliente Gemini (Librería oficial optimizada)
 let ai: GoogleGenAI | null = null;
 if (process.env.GEMINI_API_KEY) {
