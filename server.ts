@@ -12,8 +12,7 @@ console.log("Iniciando proceso de servidor híbrido (Vite + Express)...");
 async function startServer() {
   const app = express();
   app.use(cors()); // <--- AGREGAR ESTA LÍNEA PARA DAR PERMISO
-  const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
   app.use(express.json());
 
   // Inicializar Cliente Gemini
