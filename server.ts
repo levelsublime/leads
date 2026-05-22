@@ -186,6 +186,8 @@ function generateProfessionalMockProposal(inputs: any) {
   const costo_oculto_mensual = Math.round(hoursMonth * hourlyRate);
   const breakEvenMonths = inversion_sublime / costo_oculto_mensual;
   const roi_estimado_dias = Math.max(7, Math.round(breakEvenMonths * 30.4));
+  // NUEVA LÍNEA: Cálculo del 15% de comisión directa para el asesor
+  const comision_asesor = Math.round(inversion_sublime * 0.15);
 
   let solutionTitle = "Agente Conversacional WhatsApp 24/7";
   let techDetails = "Diseño de un agente reactivo con Make, Airtable Cloud y Meta Business Cloud API.";
@@ -216,7 +218,8 @@ function generateProfessionalMockProposal(inputs: any) {
       divisa_simbolo,
       costo_oculto_mensual,
       inversion_sublime,
-      roi_estimado_dias
+      roi_estimado_dias, 
+      comision_asesor // <--- AGREGAR ESTA LÍNEA AQUÍ
     },
     canales_automatizados: {
       whatsapp_seguimiento_texto: waContentText,
