@@ -294,7 +294,7 @@ Te armé una propuesta comercial de implementación ágil que se amortiza en tan
 
 ¿Te parece si agendamos un Zoom cortito mañana para ver el piloto en vivo? Cuéntame qué tal te queda tu agenda. 😊`;
 
-  return {
+ return {
     meta: {
       vendedor,
       geolocalizacion: (inputs.latitude !== undefined && inputs.longitude !== undefined) 
