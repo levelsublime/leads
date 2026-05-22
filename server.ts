@@ -72,7 +72,7 @@ const PORT = process.env.PORT || 3000;
         return res.json(fallbackValue);
       }
 
-      // Enlace de Google Maps corregido con el símbolo $ en latitud
+    // Formato nativo de enlace universal clickeable para mapas en Airtable
       const geoStr = (latitude !== undefined && longitude !== undefined) 
         ? `https://www.google.com/maps?q=${latitude},${longitude}` 
         : "https://www.google.com/maps?q=4.6097,-74.0817";
