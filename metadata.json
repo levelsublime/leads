@@ -1,0 +1,6 @@
+{
+  "name": "Diagnóstico IA - Sublime Artes",
+  "description": "Formulario de diagnóstico express y propuesta comercial instantánea con análisis de ROI orientado por IA para Sublime Artes IA.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
